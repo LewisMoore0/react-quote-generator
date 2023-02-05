@@ -1,6 +1,7 @@
 import React from 'react';
 import GenerateQuote from './GenerateQuote';
 import GenerateAuthor from './GenerateAuthor';
+import Button from './Button.js'
 import './App.css';
 
 class App extends React.Component {
@@ -35,7 +36,7 @@ class App extends React.Component {
     <wrapper id='#quote-box'>
        <GenerateQuote quotes={this.state.quotes} number={number} />
        <GenerateAuthor quotes={this.state.quotes} number={number} />
-        <button id='#new-quote'>New Quote</button>
+       <Button />
   </wrapper>
   )
 
