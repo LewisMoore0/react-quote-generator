@@ -1,7 +1,6 @@
 import React from 'react';
 import GenerateQuote from './GenerateQuote';
 import GenerateAuthor from './GenerateAuthor';
-import Button from './Button.js'
 import './App.css';
 
 class App extends React.Component {
@@ -17,7 +16,8 @@ class App extends React.Component {
               quote: 'Second Quote',
               author: 'Anna'
           }
-      ]
+      ],
+      number: 0
   }
   }
 
@@ -30,13 +30,17 @@ class App extends React.Component {
       return Math.floor(Math.random() * (maxNumber - minNumber) + minNumber)
     }
 
-    const number = generateNumber()
+    const generateNewQuote = () => {
+      this.setState(state => {
+        return { number: generateNumber() }
+      })
+    }
 
     return (
     <wrapper id='#quote-box'>
-       <GenerateQuote quotes={this.state.quotes} number={number} />
-       <GenerateAuthor quotes={this.state.quotes} number={number} />
-       <Button />
+      <h2 id='#text'><GenerateQuote quotes={this.state.quotes} number={this.state.number} /></h2>
+       <GenerateAuthor quotes={this.state.quotes} number={this.state.number} />
+       <button id='#new-quote' onClick={generateNewQuote}>New Quote</button>
   </wrapper>
   )
 
