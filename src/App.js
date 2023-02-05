@@ -1,22 +1,14 @@
 import React from 'react';
 import GenerateQuote from './GenerateQuote';
 import GenerateAuthor from './GenerateAuthor';
+import quotes from './quotes.js'
 import './App.css';
 
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      quotes: [
-          {
-              quote: 'First Quote',
-              author: 'Lewis'
-          },
-          {
-              quote: 'Second Quote',
-              author: 'Anna'
-          }
-      ],
+      quotes: quotes,
       number: 0
   }
   }
