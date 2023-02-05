@@ -31,7 +31,7 @@ class App extends React.Component {
     return (
     <wrapper id='#quote-box'>
       <h2 id='#text'><GenerateQuote quotes={this.state.quotes} number={this.state.number} /></h2>
-       <GenerateAuthor quotes={this.state.quotes} number={this.state.number} />
+       <p id='#text'><GenerateAuthor quotes={this.state.quotes} number={this.state.number} /></p>
        <button id='#new-quote' onClick={generateNewQuote}>New Quote</button>
   </wrapper>
   )
