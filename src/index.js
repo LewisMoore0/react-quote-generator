@@ -11,9 +11,10 @@ root.render(
   <div class='banner'>
         React Quote Generator
   </div>
-
+  <div className='app-wrapper'>
+    <App />
+  </div>
 </body>
 </html>
-    <App />
   </React.StrictMode>
 );
