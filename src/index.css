@@ -5,11 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: cornflowerblue;
 }
 
 .banner {
@@ -23,10 +19,3 @@ code {
 .app-wrapper {
   text-align: center;
 }
-/* 
-const mystyle = {
-  color: "white",
-  backgroundColor: "DodgerBlue",
-  padding: "10px",
-  fontFamily: "Arial"
-}; */
