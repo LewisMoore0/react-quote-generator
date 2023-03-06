@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.banner {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.qutoewrapper {
+  text-align: center;
+}
+/* 
+const mystyle = {
+  color: "white",
+  backgroundColor: "DodgerBlue",
+  padding: "10px",
+  fontFamily: "Arial"
+}; */

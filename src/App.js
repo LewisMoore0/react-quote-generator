@@ -28,10 +28,15 @@ class App extends React.Component {
       })
     }
 
+    const styles = {
+      border: 3,
+      textColor: 'red'
+    }
+
     return (
-    <wrapper id='#quote-box'>
-      <h2 id='#text'><GenerateQuote quotes={this.state.quotes} number={this.state.number} /></h2>
-       <p id='#text'><GenerateAuthor quotes={this.state.quotes} number={this.state.number} /></p>
+    <wrapper id='#quote-box' class='.quotewrapper'>
+      <h2 id='#text'><GenerateQuote quotes={this.state.quotes} number={this.state.number} styles={styles}/></h2>
+       <p id='#text'><GenerateAuthor quotes={this.state.quotes} number={this.state.number} tyles={styles}/></p>
        <button id='#new-quote' onClick={generateNewQuote}>New Quote</button>
   </wrapper>
   )

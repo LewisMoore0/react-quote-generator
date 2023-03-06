@@ -6,6 +6,14 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+<html>
+<body>
+  <div class='banner'>
+        React Quote Generator
+  </div>
+
+</body>
+</html>
     <App />
   </React.StrictMode>
 );
